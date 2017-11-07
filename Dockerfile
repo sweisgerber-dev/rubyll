@@ -15,7 +15,8 @@ RUN \
     subversion \
     imagemagick \
     nodejs \
-    npm
+    npm && \
+    ln -s /usr/bin/nodejs /usr/bin/node
 
 ENV RACK_ENV="production" \
     RAILS_ENV="production"
