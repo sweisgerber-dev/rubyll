@@ -1,4 +1,4 @@
-FROM ruby:2.4.2
+FROM ruby:2.4.2-stretch
 
 MAINTAINER Sebastian Weisgerber <weisgerber@cispa.saarland>
 
@@ -16,7 +16,7 @@ RUN \
     imagemagick \
     nodejs \
     python3 \
-    npm && \
+    nodejs && \
     ln -s /usr/bin/nodejs /usr/bin/node
 
 ENV RACK_ENV="production" \
