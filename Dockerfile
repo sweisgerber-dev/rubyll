@@ -15,6 +15,7 @@ RUN \
     subversion \
     imagemagick \
     nodejs \
+    python3 \
     npm && \
     ln -s /usr/bin/nodejs /usr/bin/node
 
