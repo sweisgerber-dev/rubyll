@@ -1,4 +1,4 @@
-FROM ruby:2.4.2-stretch
+FROM ruby:2.4-stretch
 
 MAINTAINER Sebastian Weisgerber <weisgerber@cispa.saarland>
 
@@ -14,6 +14,7 @@ RUN apt-get update
 RUN apt-get install -y \
             build-essential \
             curl \
+            ftp \
             libffi-dev \
             libpq-dev \
             ca-certificates \
