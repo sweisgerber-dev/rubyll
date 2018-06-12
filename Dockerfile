@@ -25,6 +25,7 @@ RUN apt-get install -y \
             python-pip \
             python3-pip \
             nodejs \
+            ncftp \
             npm
 RUN rm -f /usr/bin/python && ln -s /usr/bin/python3.5 /usr/bin/python
 
