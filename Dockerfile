@@ -15,6 +15,7 @@ RUN apt-get install -y \
             build-essential \
             curl \
             ftp \
+            lftp \
             libffi-dev \
             libpq-dev \
             ca-certificates \
@@ -25,7 +26,6 @@ RUN apt-get install -y \
             python-pip \
             python3-pip \
             nodejs \
-            ncftp \
             npm
 RUN rm -f /usr/bin/python && ln -s /usr/bin/python3.5 /usr/bin/python
 
