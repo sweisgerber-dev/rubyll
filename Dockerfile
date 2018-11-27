@@ -14,7 +14,7 @@ RUN apt-get update
 RUN apt-get install -y \
             build-essential \
             curl \
-            ftp \
+            lftp \
             libffi-dev \
             libpq-dev \
             ca-certificates \
