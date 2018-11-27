@@ -6,4 +6,4 @@ DOCKER_PATH_1="/workspace/project"
 docker run -ti \
     --hostname ${HOSTNAME} \
     --volume ${HOST_PATH_1}:${DOCKER_PATH_1} \
-    rubyll:latest
+    rubyll:latest /bin/bash
