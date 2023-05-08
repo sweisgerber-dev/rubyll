@@ -5,11 +5,10 @@
 
 ## Tools:
 
-> [Debian Stretch](https://www.debian.org/releases/stretch/)
+> [Debian Bullseye](https://www.debian.org/releases/stretch/)
 
 - build-essentials
-- [python 3.5 (default)](https://www.python.org/downloads/release/python-355/)
-- [python 2.7](https://www.python.org/download/releases/2.7/)
+- python (default)
 - [pip](https://pip.pypa.io)
 - [npm](https://www.npmjs.com/)
 - [nodejs](https://nodejs.org)
@@ -23,11 +22,11 @@
 ## Build
 
 ```bash
-docker build -t rubyll .
+docker buildx build ./ -t rubyll:latest
 ```
 
 ## Run
 
 ```
-docker run -i -t rubyll
+docker run -i -t rubyll:latest
 ```
