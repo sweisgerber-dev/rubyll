@@ -30,6 +30,15 @@ RUN apt-get update \
             python3 \
             virtualenv \
             python3-pip \
-            nodejs
+            nodejs \
+  && echo "**** cleanup ****" \
+  && apt-get -y autoremove \
+  && apt-get clean  \
+  && rm -rf \
+    /tmp/* \
+    /var/lib/apt/lists/* \
+    /var/tmp/* \
+    /var/log/* \
+    /usr/share/man
 
 CMD [ "irb" ]
