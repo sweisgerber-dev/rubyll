@@ -31,6 +31,7 @@ RUN apt-get update \
             virtualenv \
             python3-pip \
             nodejs \
+  && gem update --system \
   && echo "**** cleanup ****" \
   && apt-get -y autoremove \
   && apt-get clean  \
