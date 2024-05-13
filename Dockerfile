@@ -1,4 +1,4 @@
-FROM ruby:2-slim-bullseye
+FROM ruby:3.3-slim-bookworm
 
 MAINTAINER Sebastian Weisgerber <weisgerber@cispa.de>
 
